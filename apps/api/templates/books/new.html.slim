@@ -1,5 +1,12 @@
 h1 Added Book
 
+- unless params.valid?
+  .errors
+    h3 There was a problem with your submission
+    ul
+      - params.error_messages.each do |message|
+        li = message
+
 = form_for :book, '/books' do
   - div class: 'input' do
     - label      :title
