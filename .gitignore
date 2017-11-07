@@ -3,4 +3,5 @@
 .idea/*
 .env.development
 .env.test
+.byebug_history
 
